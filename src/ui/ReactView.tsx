@@ -40,8 +40,9 @@ function toText(
 - [ ] ${input}
 `;
   }
-
-  const ts = moment().toISOString(true);
+  //Timestampの形式を本家から変更
+  //const ts = moment().toISOString(true);
+  const ts = moment().format("YYYY-MM-DD HH:mm:ss");
 
   if (postFormat.type === "codeblock") {
     return `
